@@ -51,3 +51,4 @@ datasets/D2_digimouse/
 datasets/D2_ablation/
 qc/overlays/
 qc/overlays_pet/
+logs/
