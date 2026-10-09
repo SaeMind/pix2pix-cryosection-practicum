@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Primary metric: L1_fov (body pixels inside the PET field-of-view rows).
 Secondary: L1_body, L1_full, SSIM, PSNR. Reference: mean training cryosection image (MEAN_IMG).
-Blocks come from datasets/D2_ablation/split.json."""
+Blocks come from datasets/D2_ablation/split.json. Decision rule C1-C3 as in CLAUDE.md."""
 import csv, json
 from pathlib import Path
 import numpy as np
@@ -11,8 +11,9 @@ from skimage.metrics import structural_similarity as ssim, peak_signal_noise_rat
 DATA, RES, S = Path("datasets/D2_ablation"), Path("results"), 256
 META = json.loads((DATA / "split.json").read_text())
 BLK = {int(k): v for k, v in META["block"].items()}
-R0, R1 = META["pet_rows_256"]
+ROW0, ROW1 = META["pet_rows_256"]
 NAMES = ["L1_fov", "L1_body", "L1_full", "SSIM", "PSNR"]
+RUNS = ["R1", "R2", "R2b", "R3", "R4", "R4b", "R5"]
 
 
 def img(p):
@@ -22,8 +23,8 @@ def img(p):
 def met(f, r):
     body = (r[..., 0] - r[..., 1]) > 0.18
     fov = body.copy()
-    fov[:R0] = False
-    fov[R1 + 1:] = False
+    fov[:ROW0] = False
+    fov[ROW1 + 1:] = False
     d = np.abs(f - r)
     return np.array([d[fov].mean() if fov.any() else np.nan,
                      d[body].mean() if body.any() else np.nan,
@@ -39,7 +40,7 @@ def per_block(pairs):
 
 mean_img = np.mean([img(p)[:, S:] for p in sorted((DATA / "ct/train").glob("*.png"))], axis=0)
 out = {}
-for run in ["R1", "R2", "R3", "R4", "R5"]:
+for run in RUNS:
     d = RES / run / "test_latest/images"
     fakes = sorted(d.glob("*_fake_B.png"))
     if fakes:
@@ -50,7 +51,7 @@ if ref:
     out["MEAN_IMG"] = per_block([(int(f.name[:3]), met(mean_img, img(f))) for f in sorted(d0.glob("*_real_B.png"))])
 
 
-def col(run, i):
+def col(run, i=0):
     return np.array([v[i] for v in out[run].values()])
 
 
@@ -60,17 +61,26 @@ for run, b in out.items():
     print(f"{run:9s} L1_fov {np.nanmean(l):.4f} blocks [{', '.join(f'{x:.4f}' for x in l)}] "
           f"L1_body {np.nanmean(col(run, 1)):.4f} SSIM {np.nanmean(col(run, 3)):.3f} PSNR {np.nanmean(col(run, 4)):.2f}")
     table += [[run, k, *map(float, v)] for k, v in b.items()]
+
 if all(r in out for r in ("R1", "R2", "R4", "R5")):
-    nf = float(np.nanmean(np.abs(col("R1", 0) - col("R2", 0))))
-    print("noise floor, mean |L1_fov(R1) - L1_fov(R2)|:", round(nf, 4))
-    ok = True
-    for r in ("R1", "R2", "R5"):
-        d = col("R4", 0) - col(r, 0)
-        wins = int((d < 0).sum())
-        print(f"R4 vs {r}: lower L1_fov in {wins}/{len(d)} blocks, mean diff {np.nanmean(d):+.4f}")
-        ok = ok and wins == len(d)
-    gain = float(np.nanmean(col("R2", 0) - col("R4", 0)))
-    print(f"decision rule: every-block condition {'MET' if ok else 'NOT MET'}; "
-          f"mean gain over R2 {gain:+.4f} vs noise floor {nf:.4f} -> {'MET' if gain > nf else 'NOT MET'}")
+    reps = "R2b" in out and "R4b" in out
+    A2 = (col("R2") + col("R2b")) / 2 if "R2b" in out else col("R2")
+    A4 = (col("R4") + col("R4b")) / 2 if "R4b" in out else col("R4")
+    refs = {"R1": col("R1"), "R2avg": A2, "R5": col("R5")}
+    for name, r in refs.items():
+        d = A4 - r
+        print(f"R4avg vs {name}: lower L1_fov in {int((d < 0).sum())}/{len(d)} blocks, mean diff {np.nanmean(d):+.4f}")
+    c1 = all(bool((A4 < r).all()) for r in refs.values())
+    gain = float(np.nanmean(A2 - A4))
+    if reps:
+        nf = max(float(np.nanmean(np.abs(col("R2") - col("R2b")))), float(np.nanmean(np.abs(col("R4") - col("R4b")))))
+        m = lambda r: float(np.nanmean(col(r)))
+        c2 = gain > 2 * nf
+        c3 = max(m("R4"), m("R4b")) < min(m("R2"), m("R2b"))
+        print(f"replicate noise floor {nf:.4f}; gain over R2avg {gain:+.4f}; need > {2 * nf:.4f}")
+        print(f"C1 {'MET' if c1 else 'NOT MET'} | C2 {'MET' if c2 else 'NOT MET'} | C3 {'MET' if c3 else 'NOT MET'}")
+        print("VERDICT:", "PET credited (within-animal, n=1)" if (c1 and c2 and c3) else "PET NOT credited")
+    else:
+        print(f"gain over R2avg {gain:+.4f}; C1 {'MET' if c1 else 'NOT MET'}; replicates missing -> VERDICT: inconclusive")
 with open("qc/ablation_metrics.csv", "w", newline="") as fh:
     csv.writer(fh).writerows(table)
