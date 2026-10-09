@@ -1,0 +1,4 @@
+https://neuroimage.usc.edu/mouse_atlas/pet_data.zip
+https://neuroimage.usc.edu/mouse_atlas/ct_data.zip
+https://neuroimage.usc.edu/mouse_atlas/cryo_data.zip
+https://neuroimage.usc.edu/mouse_atlas/atlas.zip

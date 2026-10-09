@@ -44,3 +44,7 @@ test/data/legacy_serialized.pt
 
 #Ignore Wandb
 wandb/
+
+# Stage 0 datasets
+datasets/D1_virtual_mouse_brain/
+datasets/D2_digimouse/

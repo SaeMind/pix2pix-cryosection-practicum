@@ -1,0 +1,9 @@
+# Source: https://datadryad.org/api/v2/versions/158102/files (doi:10.5061/dryad.1vhhmgqv8, v2). Reported by Dryad, unverified against downloads.
+name	size_bytes	digest_type	digest
+AF_data.zip.zip	343016814	sha-256	4f66e03502995c258eab53fb2e212083383ae1a2d0d1c2de1b601fe029b68b6a
+MBP_to_MRI.zip	33913134	sha-256	0aeae94314b5e665d7432e309e4b27f84ca8b6b1dd7903bbc9a5a8e856fe69d3
+MRI_C57_data.zip	10697403290	sha-256	e808d76abcd8bdf11404f3616a913f48cf8b34fa27bd44f72d787226985c72af
+MRI_Shiverer.zip	6466598525	sha-256	0cfa434398a5b77a9bf8ebf111388ef6e94144dc07d2fcbd78d1a2cb7e614a98
+NF_to_MRI.zip	23783765	sha-256	7e2a8cf7746252760f8b3f6659c267ddd935d2417e45257b8c0642a5e3b25e7b
+Nissl_to_MRI.zip	1208314920	sha-256	586db247841806a4c83e787366dfc1335186d8a0b32adb6c4c3199270097c7d7
+README.txt	3039	sha-256	f97e029a437b9c7e93c2deff12264638bc0a67206bd8c5359eafcfe2f3e0d147
