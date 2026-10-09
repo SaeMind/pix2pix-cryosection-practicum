@@ -1,0 +1,13 @@
+R1        L1_fov 0.0572 blocks [0.0520, 0.0493, 0.0702] L1_body 0.0582 SSIM 0.680 PSNR 24.34
+R2        L1_fov 0.0554 blocks [0.0519, 0.0480, 0.0663] L1_body 0.0565 SSIM 0.681 PSNR 24.32
+R2b       L1_fov 0.0535 blocks [0.0508, 0.0468, 0.0629] L1_body 0.0545 SSIM 0.687 PSNR 24.44
+R4        L1_fov 0.0504 blocks [0.0502, 0.0435, 0.0576] L1_body 0.0516 SSIM 0.695 PSNR 24.95
+R4b       L1_fov 0.0509 blocks [0.0507, 0.0451, 0.0569] L1_body 0.0521 SSIM 0.696 PSNR 25.04
+R5        L1_fov 0.0538 blocks [0.0497, 0.0515, 0.0601] L1_body 0.0548 SSIM 0.692 PSNR 24.80
+MEAN_IMG  L1_fov 0.0944 blocks [0.0947, 0.1121, 0.0764] L1_body 0.0936 SSIM 0.644 PSNR 21.93
+R4avg vs R1: lower L1_fov in 3/3 blocks, mean diff -0.0065
+R4avg vs R2avg: lower L1_fov in 3/3 blocks, mean diff -0.0038
+R4avg vs R5: lower L1_fov in 2/3 blocks, mean diff -0.0032
+replicate noise floor 0.0019; gain over R2avg +0.0038; need > 0.0037
+C1 NOT MET | C2 MET | C3 MET
+VERDICT: PET NOT credited
