@@ -1,6 +1,6 @@
-# provenance: unknown (Digimouse_Cryosection.zip, hashed in place at repo root; NOT the D2 raw archive)
-82119e12e5df7fdf667e2bbe33928f8a3cb02ad8738a01630fe77075756fc6e8  Digimouse_Cryosection.zip
-786f78e9955caf467a7580a0d05c295a4ccb21d2cf9bbb2eb70fb2fc414351c6  datasets/D2_digimouse/raw/pet_data.zip
-5ca9e99a3a4adeb7879bb4d6c8f45e407b7a49bbc599b3936fa46503cf7acb65  datasets/D2_digimouse/raw/ct_data.zip
-c6b40136e06709ad7b5ce1b3496828b1a282b462ca2ec4a5610971af07c73090  datasets/D2_digimouse/raw/cryo_data.zip
-6f7cbd8a7236a78c47a14c3259d387439c0dc0284b2a83fa955f8c49efe11761  datasets/D2_digimouse/raw/atlas.zip
+# provenance: unknown (Digimouse_Cryosection.zip, hashed in place at repo root, path is relative to datasets/; NOT the D2 raw archive)
+82119e12e5df7fdf667e2bbe33928f8a3cb02ad8738a01630fe77075756fc6e8  ../Digimouse_Cryosection.zip
+786f78e9955caf467a7580a0d05c295a4ccb21d2cf9bbb2eb70fb2fc414351c6  D2_digimouse/raw/pet_data.zip
+5ca9e99a3a4adeb7879bb4d6c8f45e407b7a49bbc599b3936fa46503cf7acb65  D2_digimouse/raw/ct_data.zip
+c6b40136e06709ad7b5ce1b3496828b1a282b462ca2ec4a5610971af07c73090  D2_digimouse/raw/cryo_data.zip
+6f7cbd8a7236a78c47a14c3259d387439c0dc0284b2a83fa955f8c49efe11761  D2_digimouse/raw/atlas.zip
