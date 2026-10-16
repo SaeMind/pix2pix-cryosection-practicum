@@ -1,0 +1,112 @@
+{
+ "rule": "valid iff dice_vs_atlas_body>=0.85 AND dropped_fraction<=0.10",
+ "valid_by_block": {
+  "A (z60-74)": [
+   67,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74
+  ],
+  "B (z100-114)": [
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114
+  ],
+  "C (z140-154)": [
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154
+  ]
+ },
+ "invalid": [
+  {
+   "z": 60,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7286<0.85",
+    "dropped_fraction=0.1555>0.10"
+   ]
+  },
+  {
+   "z": 61,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7257<0.85",
+    "dropped_fraction=0.1550>0.10"
+   ]
+  },
+  {
+   "z": 62,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7367<0.85",
+    "dropped_fraction=0.1476>0.10"
+   ]
+  },
+  {
+   "z": 63,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7715<0.85",
+    "dropped_fraction=0.1446>0.10"
+   ]
+  },
+  {
+   "z": 64,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7612<0.85",
+    "dropped_fraction=0.1442>0.10"
+   ]
+  },
+  {
+   "z": 65,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.7881<0.85",
+    "dropped_fraction=0.1357>0.10"
+   ]
+  },
+  {
+   "z": 66,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.8269<0.85"
+   ]
+  },
+  {
+   "z": 68,
+   "block": "A",
+   "failing": [
+    "dice_vs_atlas_body=0.8321<0.85"
+   ]
+  }
+ ]
+}
