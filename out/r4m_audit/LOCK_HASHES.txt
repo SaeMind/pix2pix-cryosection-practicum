@@ -9,3 +9,5 @@ ef41d1a34a79dfd2d5e911ebe829677bf9a2fdfe2f0e291a47d199d86e787b69  out/r4m_audit/
 7675d9afcad9c2ead5c61f024fa876ae0b66c8cf2b25d3f42e86b7d8ddd57f80  out/r4m_audit/mask_validity.csv
 27731809d7b0d9cc5e965aa1538e987e9663644ee92c2ee6ba226936da0d29d5  out/r4m_audit/mask_valid.json
 0624470a09fbad9363b14e690017ea5f29f210ab79107a6b000b628929294b5d  out/r4m/split.json
+# Addendum 4 (PET-only) hashed 2026-10-23T11:25:03Z UTC, before any R6-M/R7-M/R6b-M data, training or scoring
+7a861b432b9943454b354814f26f66bc7f884a0d7efed978aaf03c0f4739f1ea  out/r4m_audit/addendum4_pet_only.md
