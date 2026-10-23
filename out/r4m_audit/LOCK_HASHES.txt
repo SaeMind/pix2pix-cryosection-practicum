@@ -37,3 +37,6 @@ e39ececd8f1aebe6ccad95d77061e590b47803aa3f2d44b73b484145b9021074  out/r4m_audit/
 7f0866acc277ffc51221b4c5fc2ee815843ae2898801900658e234c7a05d0981  out/r4m_audit/preview/tiles/r6m_pred.png
 4d966d8023898433c4e87614895a28f1fb2739d54b95f5eb831338dda492b4ad  out/r4m_audit/preview/tiles/r6m_err.png
 c3abe9a9065427e3e0c9b259f8fa26786f020d11abf1926062152c3bb94c50f5  out/r4m_audit/preview/tiles/target.png
+# inference_noise_check.py hashed 2026-10-23T13:23:00Z UTC, before it was run (definitions fixed before results)
+cce1ddbad32458365a1557e1eb11f960cb1824048042c462480b1f8062ee9bf3  out/r4m_audit/inference_noise_check.py
+# inference_noise_check.py results 2026-10-23T13:23:17Z UTC: pass1 vs pass2 MAD 0.0000 (z67,z107,z147 and all 45); pass1 and pass_eval byte-identical to stored R4M/pred; slide 9 values reproduced (4.75, 5.29, 5.53); runtimes 2.9/2.5/2.7 s
