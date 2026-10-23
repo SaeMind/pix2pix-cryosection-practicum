@@ -11,3 +11,10 @@ ef41d1a34a79dfd2d5e911ebe829677bf9a2fdfe2f0e291a47d199d86e787b69  out/r4m_audit/
 0624470a09fbad9363b14e690017ea5f29f210ab79107a6b000b628929294b5d  out/r4m/split.json
 # Addendum 4 (PET-only) hashed 2026-10-23T11:25:03Z UTC, before any R6-M/R7-M/R6b-M data, training or scoring
 7a861b432b9943454b354814f26f66bc7f884a0d7efed978aaf03c0f4739f1ea  out/r4m_audit/addendum4_pet_only.md
+# PET-only setup files hashed 2026-10-23T11:34:57Z UTC, before any R6M/R7M/R6bM training or scoring
+# (previous line had no hashes: shell error) PET-only setup files hashed 2026-10-23T11:35:07Z UTC, before any R6M/R7M/R6bM training or scoring
+b7cc6a56bf518f175df0d2ef4e1b7d8eb37dd9ec2898d3b1ed61bd76bd3ad6f1  out/r4m/prep_pet_variants.py
+67bc4d68b6c51855bd326a298944ba1a4a6f21c9588589b46e607a7964e1fda6  out/r4m/train_r4m_seed.py
+ac6f5d8eb2e93f2cb95e8545cae355be37319a099937dc8538d2e0d390192dd1  out/r4m/test_pet_variants.py
+62d39205a5b0ff19644444ecbe7e71550b00bdc814b62061261b062c6fa5275c  out/r4m/run_pet_queue.sh
+56a37af302808debd6fd0ee8681bfbbfd3d19ca6fda30d77b4931b5fa5105614  out/r4m/build_results_table_pet.py
