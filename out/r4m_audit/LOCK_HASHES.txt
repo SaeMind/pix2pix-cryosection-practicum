@@ -18,3 +18,9 @@ b7cc6a56bf518f175df0d2ef4e1b7d8eb37dd9ec2898d3b1ed61bd76bd3ad6f1  out/r4m/prep_p
 ac6f5d8eb2e93f2cb95e8545cae355be37319a099937dc8538d2e0d390192dd1  out/r4m/test_pet_variants.py
 62d39205a5b0ff19644444ecbe7e71550b00bdc814b62061261b062c6fa5275c  out/r4m/run_pet_queue.sh
 56a37af302808debd6fd0ee8681bfbbfd3d19ca6fda30d77b4931b5fa5105614  out/r4m/build_results_table_pet.py
+# Addendum 4a hashed 2026-10-23T11:40:55Z UTC, before any R6M output was opened
+da4ea29555af008fdc764fe04af661e7309011feefc763044a0d349badda258a  out/r4m_audit/addendum4a_clarification.md
+# PET-only preview setup files hashed 2026-10-23T11:41:57Z UTC, before any R6M output was opened
+17c72233f02a0d44a886aadaf969b92f2c9497eb19224029a6209a93628dcea6  out/r4m/run_r6m_only.sh
+091fff82b301d5e25fcae935cee67131f597e1e436c566739f275de34684012d  out/r4m/run_pet_queue_rest.sh
+84e36e793761fb20546c45bf2e5b31e923425f9013cc1a7059c176464a17d254  out/r4m_audit/make_pet_panel.py
