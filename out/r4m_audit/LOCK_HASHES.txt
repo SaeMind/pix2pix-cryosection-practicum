@@ -40,3 +40,8 @@ c3abe9a9065427e3e0c9b259f8fa26786f020d11abf1926062152c3bb94c50f5  out/r4m_audit/
 # inference_noise_check.py hashed 2026-10-23T13:23:00Z UTC, before it was run (definitions fixed before results)
 cce1ddbad32458365a1557e1eb11f960cb1824048042c462480b1f8062ee9bf3  out/r4m_audit/inference_noise_check.py
 # inference_noise_check.py results 2026-10-23T13:23:17Z UTC: pass1 vs pass2 MAD 0.0000 (z67,z107,z147 and all 45); pass1 and pass_eval byte-identical to stored R4M/pred; slide 9 values reproduced (4.75, 5.29, 5.53); runtimes 2.9/2.5/2.7 s
+# slide9_10_update.py hashed 2026-10-23T13:37:57Z UTC, before it was run (definitions confirmed by reproducing slides 9 and 10 first)
+ddd3556a587c95c38ed55805f479c4a84e813314b586955b787c15f9c21edae3  out/r4m_audit/slide9_10_update.py
+# slide 9/10 output files hashed 2026-10-23T13:38:05Z UTC
+1726b5a5da6d8b1306f995689a5cab2a603853d074d1caea7ae3a9e7283ae61d  out/r4m_audit/slide9_10_values.md
+3676cd498e2528f7dcb982f2387a51b35036ba23395bc2f934388670f8cfbbea  out/r4m_audit/slide9_10_values.csv
