@@ -1,0 +1,7 @@
+e39ececd8f1aebe6ccad95d77061e590b47803aa3f2d44b73b484145b9021074  r2m_err.png  <- derived: clip(|out/r4m/R2M/pred/107.png - out/r4m/data/test_target/107.png| * 4, 0, 255), as make_panels_centres.py:14
+d85cf78d6fb68cfcb68240bbc288000abdd6ffe9e418ab3df6d767e507ffb20e  r2m_pred.png  <- copy of out/r4m/R2M/pred/107.png
+ab5895fd6ef2ea86ee62fe2766004a028e9dcaddf4aa77996a24367267e3efa6  r4m_err.png  <- derived: clip(|out/r4m/R4M/pred/107.png - out/r4m/data/test_target/107.png| * 4, 0, 255), as make_panels_centres.py:14
+d7ab28c74676cbe1fbbdd8ad9ab8fe6473b9c8586f8f46a49447dba3379b9000  r4m_pred.png  <- copy of out/r4m/R4M/pred/107.png
+4d966d8023898433c4e87614895a28f1fb2739d54b95f5eb831338dda492b4ad  r6m_err.png  <- derived: clip(|out/r4m/R6M/pred/107.png - out/r4m/data/test_target/107.png| * 4, 0, 255), as make_panels_centres.py:14
+7f0866acc277ffc51221b4c5fc2ee815843ae2898801900658e234c7a05d0981  r6m_pred.png  <- copy of out/r4m/R6M/pred/107.png
+c3abe9a9065427e3e0c9b259f8fa26786f020d11abf1926062152c3bb94c50f5  target.png  <- copy of out/r4m/data/test_target/107.png
