@@ -52,3 +52,61 @@ datasets/D2_ablation/
 qc/overlays/
 qc/overlays_pet/
 logs/
+
+# --- GitHub-prep additions ---
+# NOTE: top-level data/ is SOURCE CODE (dataset loaders) in this repo, so it is NOT ignored.
+# Datasets and derived data (DigiMouse is CC BY-SA 4.0; other licenses UNVERIFIED)
+/datasets/
+/out/r4m/data/
+/_digimouse_extracted/
+/Digimouse_Cryosection/
+/Blockface_Imaging/
+/roi_inspection/
+/duplication_audit/
+/duplication_audit_v2/
+/mask_diagnosis/
+/slide_assets/
+/track2_output/
+/results/
+/runs/
+/out/mps_check/
+/out/prostate_inventory/
+/out/r4m_audit/pytest_pkg/
+/out/r4m_audit/scratch_noise/
+/out/r4m_audit/smoke/
+/out/r4m/checkpoints/
+/out/r4m/R*M/*
+!/out/r4m/R*M/config.json
+!/out/r4m/R*M/metrics.json
+!/out/r4m/R*M/loss_curve.csv
+outputs/
+
+# Weights, volumes, archives, arrays
+*.pth
+*.pt
+*.ckpt
+*.nii
+*.nii.gz
+*.tif
+*.tiff
+*.mat
+*.npy
+*.npz
+*.img
+*.hdr
+*.zip
+*.pdf
+
+# Environments, caches, secrets, OS files
+.venv/
+pix2pix_env/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.env
+.env.*
+*.pem
+*.key
+*.log

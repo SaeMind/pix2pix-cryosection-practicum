@@ -1,0 +1,18 @@
+# Derived from imports in train.py, test.py, models/, data/, util/, qc/, out/r4m/, out/r4m_audit/.
+# Versions read from the local pix2pix_env; not tested elsewhere (UNVERIFIED).
+torch==2.4.0
+torchvision==0.19.0
+numpy>=1.24
+Pillow>=10.0
+scikit-image>=0.21
+scipy>=1.10
+matplotlib>=3.7
+nibabel>=5.0
+tifffile>=2023.1
+dominate>=2.8
+# optional
+wandb>=0.16          # util/visualizer.py, test.py (optional logging)
+pytest>=7            # out/r4m/test_*.py
+# not required for the main pipeline:
+#   h5py (train_v1.py only), requests + beautifulsoup4 (util/get_data.py only)
+# not in this repository: pairverify (out/r4m_audit/verify_pairs_ref.py imports it from a sibling clone)
