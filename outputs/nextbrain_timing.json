@@ -1,0 +1,49 @@
+{
+ "device": "mps",
+ "torch": "2.4.0",
+ "n_train": 3622,
+ "n_val": 405,
+ "excluded_blocks": [],
+ "iters": 200,
+ "warmup_s": 1.2395133972167969,
+ "sec_per_iter": 0.05600990998117547,
+ "sec_per_iter_sd": 0.010711196652649255,
+ "peak_mem_bytes_sampled": 421363712,
+ "mem_stat": "MPS driver_allocated_memory, sampled after each iteration (no peak API)",
+ "process_peak_rss_bytes": 1001652224,
+ "data_load_s_per_record": 0.0038010990619659424,
+ "val_load_s_per_record": 0.0034246344625214,
+ "val_pass_s": 13.30370807647705,
+ "val_masked_L1_after_200_iters": 0.20038709460217274,
+ "val_masked_L1_sd": 0.09472590668980642,
+ "last_lossG": 7.7348432540893555,
+ "last_lossD": 0.13396334648132324,
+ "estimates": {
+  "1_epoch_s": 216.17160202829461,
+  "50_epochs_s": 10808.580101414731,
+  "100_epochs_s": 21617.160202829462
+ },
+ "fold_counts_train_val_after_exclusion": {
+  "1": [
+   3650,
+   404
+  ],
+  "2": [
+   3698,
+   436
+  ],
+  "3": [
+   3622,
+   405
+  ],
+  "4": [
+   3637,
+   441
+  ],
+  "5": [
+   3611,
+   384
+  ]
+ },
+ "total_5folds_2stains_100ep_s": 217677.05404114304
+}

@@ -1,0 +1,48 @@
+initialize network with normal
+initialize network with normal
+preloaded train 3578 val 404 in 35s; device mps; excluded ['EX9-19/48', 'P85-18/28']
+epoch   1/100 lr 2.00e-04 G 8.0027 D 0.5047 L1 0.0658 val_L1 0.1363 best 0.1363@1 sec 304 *
+epoch   2/100 lr 2.00e-04 G 6.1862 D 0.5303 L1 0.0482 val_L1 0.1422 best 0.1363@1 sec 299
+epoch   3/100 lr 2.00e-04 G 5.3074 D 0.5924 L1 0.0422 val_L1 0.1295 best 0.1295@3 sec 295 *
+epoch   4/100 lr 2.00e-04 G 4.8788 D 0.6069 L1 0.0385 val_L1 0.1418 best 0.1295@3 sec 294
+epoch   5/100 lr 2.00e-04 G 4.6051 D 0.6199 L1 0.0363 val_L1 0.1677 best 0.1295@3 sec 294
+epoch   6/100 lr 2.00e-04 G 4.3806 D 0.6269 L1 0.0343 val_L1 0.1661 best 0.1295@3 sec 294
+epoch   7/100 lr 2.00e-04 G 4.1981 D 0.6334 L1 0.0328 val_L1 0.1628 best 0.1295@3 sec 297
+epoch   8/100 lr 2.00e-04 G 4.0723 D 0.6350 L1 0.0316 val_L1 0.1710 best 0.1295@3 sec 298
+epoch   9/100 lr 2.00e-04 G 3.9879 D 0.6354 L1 0.0307 val_L1 0.1598 best 0.1295@3 sec 295
+epoch  10/100 lr 2.00e-04 G 3.9088 D 0.6347 L1 0.0299 val_L1 0.1915 best 0.1295@3 sec 295
+EPOCH-10 CHECK: val L1 0.1915 (min over epochs 1-10 0.1295) | 200-iteration reference 0.1925 | validation lookup baseline: harness grid 0.1334, original grid 0.1333
+epoch  11/100 lr 2.00e-04 G 3.8593 D 0.6341 L1 0.0293 val_L1 0.1527 best 0.1295@3 sec 297
+epoch  12/100 lr 2.00e-04 G 3.8184 D 0.6310 L1 0.0288 val_L1 0.1467 best 0.1295@3 sec 294
+epoch  13/100 lr 2.00e-04 G 3.7956 D 0.6273 L1 0.0284 val_L1 0.1606 best 0.1295@3 sec 295
+epoch  14/100 lr 2.00e-04 G 3.7982 D 0.6220 L1 0.0281 val_L1 0.1500 best 0.1295@3 sec 295
+epoch  15/100 lr 2.00e-04 G 3.8591 D 0.6076 L1 0.0281 val_L1 0.1603 best 0.1295@3 sec 294
+epoch  16/100 lr 2.00e-04 G 4.1023 D 0.5580 L1 0.0286 val_L1 0.1370 best 0.1295@3 sec 293
+epoch  17/100 lr 2.00e-04 G 4.4496 D 0.4969 L1 0.0294 val_L1 0.1536 best 0.1295@3 sec 294
+epoch  18/100 lr 2.00e-04 G 4.7757 D 0.4506 L1 0.0302 val_L1 0.1462 best 0.1295@3 sec 294
+epoch  19/100 lr 2.00e-04 G 5.0456 D 0.4232 L1 0.0309 val_L1 0.1537 best 0.1295@3 sec 294
+epoch  20/100 lr 2.00e-04 G 5.2322 D 0.4039 L1 0.0314 val_L1 0.1847 best 0.1295@3 sec 295
+epoch  21/100 lr 2.00e-04 G 5.3755 D 0.3879 L1 0.0316 val_L1 0.1408 best 0.1295@3 sec 295
+epoch  22/100 lr 2.00e-04 G 5.5398 D 0.3769 L1 0.0323 val_L1 0.1469 best 0.1295@3 sec 293
+epoch  23/100 lr 2.00e-04 G 5.6035 D 0.3704 L1 0.0325 val_L1 0.1763 best 0.1295@3 sec 295
+epoch  24/100 lr 2.00e-04 G 5.6972 D 0.3633 L1 0.0325 val_L1 0.1450 best 0.1295@3 sec 299
+epoch  25/100 lr 2.00e-04 G 5.7801 D 0.3497 L1 0.0327 val_L1 0.1472 best 0.1295@3 sec 293
+epoch  26/100 lr 2.00e-04 G 5.8828 D 0.3537 L1 0.0331 val_L1 0.1726 best 0.1295@3 sec 294
+epoch  27/100 lr 2.00e-04 G 5.9710 D 0.3379 L1 0.0331 val_L1 0.1389 best 0.1295@3 sec 294
+epoch  28/100 lr 2.00e-04 G 6.1425 D 0.3297 L1 0.0339 val_L1 0.1483 best 0.1295@3 sec 294
+epoch  29/100 lr 2.00e-04 G 6.2292 D 0.3224 L1 0.0340 val_L1 0.1517 best 0.1295@3 sec 294
+epoch  30/100 lr 2.00e-04 G 6.3095 D 0.3151 L1 0.0343 val_L1 0.1656 best 0.1295@3 sec 293
+epoch  31/100 lr 2.00e-04 G 6.3769 D 0.2963 L1 0.0339 val_L1 0.1391 best 0.1295@3 sec 293
+epoch  32/100 lr 2.00e-04 G 6.4752 D 0.3100 L1 0.0345 val_L1 0.1606 best 0.1295@3 sec 294
+epoch  33/100 lr 2.00e-04 G 6.5277 D 0.2949 L1 0.0348 val_L1 0.1545 best 0.1295@3 sec 294
+epoch  34/100 lr 2.00e-04 G 6.5927 D 0.2910 L1 0.0346 val_L1 0.1475 best 0.1295@3 sec 294
+epoch  35/100 lr 2.00e-04 G 6.7182 D 0.2883 L1 0.0349 val_L1 0.1555 best 0.1295@3 sec 292
+epoch  36/100 lr 2.00e-04 G 6.6831 D 0.2893 L1 0.0348 val_L1 0.1577 best 0.1295@3 sec 292
+epoch  37/100 lr 2.00e-04 G 6.6747 D 0.2892 L1 0.0348 val_L1 0.1465 best 0.1295@3 sec 293
+epoch  38/100 lr 2.00e-04 G 6.8267 D 0.2761 L1 0.0352 val_L1 0.1784 best 0.1295@3 sec 304
+epoch  39/100 lr 2.00e-04 G 6.7784 D 0.2839 L1 0.0351 val_L1 0.1478 best 0.1295@3 sec 416
+epoch  40/100 lr 2.00e-04 G 6.8167 D 0.2789 L1 0.0352 val_L1 0.1698 best 0.1295@3 sec 459
+epoch  41/100 lr 2.00e-04 G 6.7906 D 0.2864 L1 0.0352 val_L1 0.1618 best 0.1295@3 sec 496
+epoch  42/100 lr 2.00e-04 G 6.7910 D 0.2873 L1 0.0351 val_L1 0.1547 best 0.1295@3 sec 534
+epoch  43/100 lr 2.00e-04 G 6.8802 D 0.2790 L1 0.0355 val_L1 0.1643 best 0.1295@3 sec 373
+epoch  44/100 lr 2.00e-04 G 6.9502 D 0.2796 L1 0.0358 val_L1 0.1553 best 0.1295@3 sec 344

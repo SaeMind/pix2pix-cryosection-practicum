@@ -1,0 +1,18 @@
+{
+  "name": "nb_fold2_he",
+  "fold": 2,
+  "target": "HE",
+  "splits": "splits/nextbrain_fold2.json",
+  "all_splits_glob": "splits/nextbrain_fold{k}.json",
+  "metadata": "outputs/nextbrain_metadata/nextbrain_all_cases.csv",
+  "data_root": null,
+  "prereg": "outputs/nextbrain_train_prereg.md",
+  "exclude_blocks": ["P85-18/28", "EX9-19/48"],
+  "ngf": 32, "ndf": 32, "netG": "unet_256", "netD": "basic", "n_layers_D": 3, "norm": "batch", "use_dropout": true,
+  "gan_mode": "vanilla", "lambda_L1": 100.0,
+  "lr": 0.0002, "beta1": 0.5, "beta2": 0.999, "batch_size": 1,
+  "epochs_const": 50, "epochs_decay": 50,
+  "seed": 1234, "image_size": 256,
+  "timing_iters": 200, "warmup_iters": 10,
+  "out_json": "outputs/nextbrain_timing.json", "out_md": "outputs/nextbrain_timing.md"
+}

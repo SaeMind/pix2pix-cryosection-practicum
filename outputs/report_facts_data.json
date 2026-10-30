@@ -1,0 +1,354 @@
+{
+ "table1": [
+  {
+   "run": "R2M",
+   "desc": "CT only",
+   "seed": 1234,
+   "block": "A",
+   "L1_maskv2": 0.06161174923181534,
+   "SSIM_maskv2": 0.4286039173603058,
+   "PSNR_maskv2": 21.972206115722656,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "R2M",
+   "desc": "CT only",
+   "seed": 1234,
+   "block": "B",
+   "L1_maskv2": 0.06053610518574715,
+   "SSIM_maskv2": 0.47795435786247253,
+   "PSNR_maskv2": 22.12801742553711,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "R2M",
+   "desc": "CT only",
+   "seed": 1234,
+   "block": "C",
+   "L1_maskv2": 0.07523978501558304,
+   "SSIM_maskv2": 0.44312965869903564,
+   "PSNR_maskv2": 20.58000373840332,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "R2M",
+   "desc": "CT only",
+   "seed": 1234,
+   "block": "mean of 3 blocks",
+   "L1_maskv2": 0.06579587981104851,
+   "SSIM_maskv2": 0.449895977973938,
+   "PSNR_maskv2": 21.560075759887695,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "baseline_mean_train_cryo",
+   "desc": "reference image",
+   "seed": "-",
+   "block": "A",
+   "L1_maskv2": 0.09611479938030243,
+   "SSIM_maskv2": 0.3955079913139343,
+   "PSNR_maskv2": 18.63615608215332,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "baseline_mean_train_cryo",
+   "desc": "reference image",
+   "seed": "-",
+   "block": "B",
+   "L1_maskv2": 0.1025044247508049,
+   "SSIM_maskv2": 0.3686962425708771,
+   "PSNR_maskv2": 18.15989875793457,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "baseline_mean_train_cryo",
+   "desc": "reference image",
+   "seed": "-",
+   "block": "C",
+   "L1_maskv2": 0.07923492044210434,
+   "SSIM_maskv2": 0.4107794463634491,
+   "PSNR_maskv2": 20.27981948852539,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "baseline_mean_train_cryo",
+   "desc": "reference image",
+   "seed": "-",
+   "block": "mean of 3 blocks",
+   "L1_maskv2": 0.09261804819107056,
+   "SSIM_maskv2": 0.39166122674942017,
+   "PSNR_maskv2": 19.025291442871094,
+   "path": "out/r4m_audit/score_extra_R2M.json"
+  },
+  {
+   "run": "R4M",
+   "desc": "PET+CT",
+   "seed": 1234,
+   "block": "A",
+   "L1_maskv2": 0.055893294513225555,
+   "SSIM_maskv2": 0.45464879274368286,
+   "PSNR_maskv2": 22.684877395629883,
+   "path": "out/r4m_audit/score_extra_R4M.json"
+  },
+  {
+   "run": "R4M",
+   "desc": "PET+CT",
+   "seed": 1234,
+   "block": "B",
+   "L1_maskv2": 0.056343868374824524,
+   "SSIM_maskv2": 0.487981379032135,
+   "PSNR_maskv2": 22.70208168029785,
+   "path": "out/r4m_audit/score_extra_R4M.json"
+  },
+  {
+   "run": "R4M",
+   "desc": "PET+CT",
+   "seed": 1234,
+   "block": "C",
+   "L1_maskv2": 0.0712255984544754,
+   "SSIM_maskv2": 0.4480338990688324,
+   "PSNR_maskv2": 21.013486862182617,
+   "path": "out/r4m_audit/score_extra_R4M.json"
+  },
+  {
+   "run": "R4M",
+   "desc": "PET+CT",
+   "seed": 1234,
+   "block": "mean of 3 blocks",
+   "L1_maskv2": 0.06115425378084183,
+   "SSIM_maskv2": 0.4635546902815501,
+   "PSNR_maskv2": 22.133481979370117,
+   "path": "out/r4m_audit/score_extra_R4M.json"
+  },
+  {
+   "run": "R5M",
+   "desc": "PET(shuffled)+CT",
+   "seed": 1234,
+   "block": "A",
+   "L1_maskv2": 0.05996107682585716,
+   "SSIM_maskv2": 0.4281349182128906,
+   "PSNR_maskv2": 22.075244903564453,
+   "path": "out/r4m_audit/score_extra_R5M.json"
+  },
+  {
+   "run": "R5M",
+   "desc": "PET(shuffled)+CT",
+   "seed": 1234,
+   "block": "B",
+   "L1_maskv2": 0.06138033792376518,
+   "SSIM_maskv2": 0.4612952768802643,
+   "PSNR_maskv2": 22.003698348999023,
+   "path": "out/r4m_audit/score_extra_R5M.json"
+  },
+  {
+   "run": "R5M",
+   "desc": "PET(shuffled)+CT",
+   "seed": 1234,
+   "block": "C",
+   "L1_maskv2": 0.06422051787376404,
+   "SSIM_maskv2": 0.4461113512516022,
+   "PSNR_maskv2": 21.743186950683594,
+   "path": "out/r4m_audit/score_extra_R5M.json"
+  },
+  {
+   "run": "R5M",
+   "desc": "PET(shuffled)+CT",
+   "seed": 1234,
+   "block": "mean of 3 blocks",
+   "L1_maskv2": 0.06185397754112879,
+   "SSIM_maskv2": 0.4451805154482524,
+   "PSNR_maskv2": 21.940710067749023,
+   "path": "out/r4m_audit/score_extra_R5M.json"
+  },
+  {
+   "run": "R6M",
+   "desc": "PET only",
+   "seed": 1234,
+   "block": "A",
+   "L1_maskv2": 0.05782632157206535,
+   "SSIM_maskv2": 0.4523334503173828,
+   "PSNR_maskv2": 22.391746520996094,
+   "path": "out/r4m_audit/score_extra_R6M.json"
+  },
+  {
+   "run": "R6M",
+   "desc": "PET only",
+   "seed": 1234,
+   "block": "B",
+   "L1_maskv2": 0.0609489344060421,
+   "SSIM_maskv2": 0.46987780928611755,
+   "PSNR_maskv2": 22.175201416015625,
+   "path": "out/r4m_audit/score_extra_R6M.json"
+  },
+  {
+   "run": "R6M",
+   "desc": "PET only",
+   "seed": 1234,
+   "block": "C",
+   "L1_maskv2": 0.06710753589868546,
+   "SSIM_maskv2": 0.4323200285434723,
+   "PSNR_maskv2": 21.47441291809082,
+   "path": "out/r4m_audit/score_extra_R6M.json"
+  },
+  {
+   "run": "R6M",
+   "desc": "PET only",
+   "seed": 1234,
+   "block": "mean of 3 blocks",
+   "L1_maskv2": 0.061960930625597634,
+   "SSIM_maskv2": 0.4515104293823242,
+   "PSNR_maskv2": 22.013786951700848,
+   "path": "out/r4m_audit/score_extra_R6M.json"
+  }
+ ],
+ "table2": [
+  {
+   "item": "CT released volume",
+   "format": "Analyze 7.5 .hdr/.img",
+   "dims": "(380, 992, 208)",
+   "voxel_mm": "(0.10000000149011612, 0.10000000149011612, 0.10000000149011612)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 255,
+   "unique_all": 256,
+   "unique_test": 256,
+   "path": "datasets/D2_digimouse/processed/extracted/ct_data/ct_380x992x208.hdr"
+  },
+  {
+   "item": "PET released volume",
+   "format": "Analyze 7.5 .hdr/.img",
+   "dims": "(380, 992, 208)",
+   "voxel_mm": "(0.10000000149011612, 0.10000000149011612, 0.10000000149011612)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 255,
+   "unique_all": 256,
+   "unique_test": 256,
+   "path": "datasets/D2_digimouse/processed/extracted/pet_data/pet_380x992x208.hdr"
+  },
+  {
+   "item": "cryostat .img (8-bit; not used for training)",
+   "format": "Analyze 7.5 .hdr/.img",
+   "dims": "(380, 992, 208)",
+   "voxel_mm": "(0.10000000149011612, 0.10000000149011612, 0.10000000149011612)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 251,
+   "unique_all": 252,
+   "unique_test": 250,
+   "path": "datasets/D2_digimouse/processed/extracted/cryo_data/cryostat_380x992x208.hdr"
+  },
+  {
+   "item": "cryosection TIFF stack (training target source)",
+   "format": "TIFF RGB, one file per slice",
+   "dims": "(208, 992, 380, 3)",
+   "voxel_mm": "0.1 (from cryostat .hdr; TIFFs carry no header read here: UNVERIFIED for TIFF)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 255,
+   "unique_all": "per channel R/G/B: 256/254/246",
+   "unique_test": "distinct RGB triplets on test slices: 120061",
+   "path": "datasets/D2_digimouse/processed/extracted/cryo_data/average01_380x992x208_slices_tif"
+  },
+  {
+   "item": "CT as seen by network (256x256 PNG, test inputs)",
+   "format": "PNG 8-bit",
+   "dims": "(45, 256, 256)",
+   "voxel_mm": "anisotropic: 992->256 rows, 380->256 cols (see notes)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 255,
+   "unique_all": "-",
+   "unique_test": 256,
+   "path": "out/r4m/data/ct/test_input/*.png"
+  },
+  {
+   "item": "PET as seen by network (256x256 PNG, test inputs)",
+   "format": "PNG 8-bit",
+   "dims": "(45, 256, 256)",
+   "voxel_mm": "anisotropic: 992->256 rows, 380->256 cols (see notes)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 255,
+   "unique_all": "-",
+   "unique_test": 256,
+   "path": "out/r4m/data/petct/test_input/*.png (channel 0)"
+  },
+  {
+   "item": "cryosection target (256x256 PNG, test targets)",
+   "format": "PNG 8-bit",
+   "dims": "(45, 256, 256, 3)",
+   "voxel_mm": "anisotropic: 992->256 rows, 380->256 cols (see notes)",
+   "bits": 8,
+   "dtype": "uint8",
+   "vmin": 0,
+   "vmax": 216,
+   "unique_all": "-",
+   "unique_test": "217 (all channels)",
+   "path": "out/r4m/data/test_target/*.png"
+  }
+ ],
+ "pet_nonzero_rows_native": [
+  26,
+  834
+ ],
+ "spectrum": {
+  "native 0.1 mm grid": {
+   "CT": {
+    "frac_power_f>=0.0625": 0.01803843731350439,
+    "frac_power_f>=0.125": 0.0007316561223968073,
+    "frac_power_f>=0.25": 3.379429267374851e-05,
+    "f95_cyc_per_px": 0.04296875
+   },
+   "PET": {
+    "frac_power_f>=0.0625": 0.00023324862667206084,
+    "frac_power_f>=0.125": 9.370508396852569e-06,
+    "frac_power_f>=0.25": 2.073784562710017e-06,
+    "f95_cyc_per_px": 0.02734375
+   },
+   "cryosection": {
+    "frac_power_f>=0.0625": 0.01770425799451797,
+    "frac_power_f>=0.125": 0.004889217162772465,
+    "frac_power_f>=0.25": 0.0012213644833791353,
+    "f95_cyc_per_px": 0.03515625
+   }
+  },
+  "network input 256x256": {
+   "CT": {
+    "frac_power_f>=0.0625": 0.04308673546080627,
+    "frac_power_f>=0.125": 0.008321475217625867,
+    "frac_power_f>=0.25": 0.0010620897463967142,
+    "f95_cyc_per_px": 0.05859375
+   },
+   "PET": {
+    "frac_power_f>=0.0625": 0.00822788807080062,
+    "frac_power_f>=0.125": 0.0004984385531732711,
+    "frac_power_f>=0.25": 7.100493487184561e-06,
+    "f95_cyc_per_px": 0.03515625
+   },
+   "cryosection": {
+    "frac_power_f>=0.0625": 0.012292525017762276,
+    "frac_power_f>=0.125": 0.0028285983458335917,
+    "frac_power_f>=0.25": 0.00043152878478972174,
+    "f95_cyc_per_px": 0.03515625
+   }
+  }
+ },
+ "spectrum_crop": {
+  "native_rows": [
+   26,
+   834
+  ],
+  "net_rows_256": [
+   6,
+   215
+  ],
+  "n_slices": 45
+ }
+}

@@ -110,3 +110,33 @@ __pycache__/
 *.pem
 *.key
 *.log
+
+# NextBrain safety: preserve upstream data/ Python source.
+/splits/
+/outputs/
+/out/r4m/ALLDONE
+/out/r4m/pet_queue_status.txt
+checkpoints/
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+
+# Restricted dataset image formats, including uppercase extensions.
+*.[pP][nN][gG]
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[bB][mM][pP]
+*.[gG][iI][fF]
+*.[wW][eE][bB][pP]
+*.[dD][cC][mM]
+/.pytest_cache/
+
+# Local handoff log (stays untracked)
+/HANDOFF_LOG.md
+
+# NextBrain raw data (kept outside the repo; ignored if ever copied in)
+NextBrain/
+**/NextBrain/

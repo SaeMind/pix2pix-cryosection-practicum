@@ -1,0 +1,23 @@
+{
+ "folds": {
+  "1": {
+   "status": "training",
+   "attempt": 1,
+   "started_utc": "2026-10-30T09:56:47Z",
+   "command": "nohup caffeinate -i pix2pix_env/bin/python -W ignore scripts/train_nextbrain_fold.py --config configs/nextbrain_fold1_he.json --root /Users/gihbeom/Data/NextBrain --mode train --epochs 100 --out_dir outputs/nextbrain_fold1_he",
+   "epoch10_report": {
+    "val_L1_epoch10": 0.1915,
+    "min_val_L1_epochs_1_10": 0.12951,
+    "reference_200_iter_fold3": 0.1925,
+    "lookup_val_L1_harness": 0.13338190678617742,
+    "mean_target_val_L1_harness": 0.26023034345690566,
+    "note": "the 0.1925 reference is the fold-3 200-iteration value; applied unchanged to this fold (UNVERIFIED as an appropriate bar)"
+   }
+  }
+ },
+ "note": "H&E only; no LFB run is queued",
+ "queue_pid": 47697,
+ "updated_utc": "2026-10-30T10:47:18Z",
+ "status": "waiting for fold 3",
+ "fold3_complete_utc": "2026-10-30T09:56:47Z"
+}

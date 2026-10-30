@@ -45,3 +45,60 @@ ddd3556a587c95c38ed55805f479c4a84e813314b586955b787c15f9c21edae3  out/r4m_audit/
 # slide 9/10 output files hashed 2026-10-23T13:38:05Z UTC
 1726b5a5da6d8b1306f995689a5cab2a603853d074d1caea7ae3a9e7283ae61d  out/r4m_audit/slide9_10_values.md
 3676cd498e2528f7dcb982f2387a51b35036ba23395bc2f934388670f8cfbbea  out/r4m_audit/slide9_10_values.csv
+# NextBrain pre-registration hashed 2026-10-30T00:03:56Z UTC, before build_nextbrain_metadata.py, any split, leakage audit or baseline was run
+0cb295dddd26101a75a090ff01b84c19141a9d1651843e8ae7f74e5acd293d12  outputs/nextbrain_prereg.md
+# NextBrain pre-registration addendum 1 hashed 2026-10-30T00:05:30Z UTC, before any NextBrain baseline was run (clarifies the train/validation subject rule; splits unchanged)
+a8bbf9bea74707b6ebfd075e5980d7241211868c821450f2dc330904585024a7  outputs/nextbrain_prereg_addendum1.md
+# NextBrain training pre-registration hashed 2026-10-30T00:14:58Z UTC, before the training harness was written or run (fold 3 timing test)
+056aca400c870a7911d3424dd829974d6ec4a8801a05a5de8451b806d5fe147f  outputs/nextbrain_train_prereg.md
+# NextBrain training pre-registration addendum 1 hashed 2026-10-30T00:21:13Z UTC, before the repeated timing run (flagged blocks included by owner decision)
+79ef1e4e1637ede5fd659dff2b91ddea11d4052caa9c73cdda2aa4b9dc377682  outputs/nextbrain_train_prereg_addendum1.md
+# NextBrain analysis addendum 2 hashed 2026-10-30T00:33:43Z UTC, before the sensitivity script was written or run and before any model was trained for evaluation (flagged-block rule, validation baselines, sensitivity analysis)
+76dd0d50b81713729e595c3025b445e8b536fb7750978d241c25f534c1520db8  outputs/nextbrain_analysis_addendum2.md
+# Missing NextBrain files hashed 2026-10-30T00:51:48Z UTC, before the fold 3 MRI-to-H&E training run (splits and config as used; baselines outputs as reported)
+b79572de5c490dedbcc431432382cdf0248f14b392b9f5df00d29af1b64740bc  splits/nextbrain_fold1.json
+c1cda81c04bf6e0ede0874f74c6aeed9e36e02cac654453d9ae55cd28e6d6300  splits/nextbrain_fold2.json
+944782871fb1f73bdce08d2efc8defe524fee8de604edc4cbc7fd5ae90f686aa  splits/nextbrain_fold3.json
+0f9f025686600242a55b857536b2330d7a2ef8a04b81dc86e0fa8b4ef3edcd8d  splits/nextbrain_fold4.json
+1b2e0760527e3eaf57fb090dca61391060bde71ac4581ca8861ab576c015ba75  splits/nextbrain_fold5.json
+86dc5b76b9f495263c50645369e1ac47f35a10c171774e03d0e1712681e4076c  configs/nextbrain_fold3_he.json
+0b8c732058bcd1093b5cb0de960080d89ad22d59bf2011616aa2dd79a7145863  outputs/nextbrain_baselines.json
+3cfe35e9a0744b47bf623186f9c449ce2bf1bfee0622302c3983ec201b32788c  outputs/nextbrain_baselines_sensitivity.json
+# NOTE: outputs/nextbrain_baselines_validation.json does not exist (the validation scores are in outputs/nextbrain_baselines_validation.md and under the 'validation' key of outputs/nextbrain_baselines_sensitivity.json); it was not created and not hashed
+6948478513750f1cfc1a83f8d31c77b1d9ffd01daf739dad68b3660e40352d08  outputs/nextbrain_baselines_validation.md
+# NextBrain evaluation addendum 3 hashed 2026-10-30T00:52:02Z UTC, before the harness-grid baselines script was written or run and before the fold 3 MRI-to-H&E run was launched
+9dd7b3bc901244a4bed3a803349be17de5f93c52ce224be5510cb2f7617a46db  outputs/nextbrain_eval_addendum3.md
+# Harness-grid baselines, training harness (train mode added) and one-time test-eval script hashed 2026-10-30T00:56:51Z UTC, before the fold 3 MRI-to-H&E run was launched and before any model output or test evaluation exists
+36ecc65e1856e3441fd96688e3212a490aceb1a26c0a4b3a14b2f0b8e548d9a4  scripts/nextbrain_baselines_harness_grid.py
+76341968bff71a7a76f214fa79a9303a9c7359c46e8072ff6a43c502fb09d3a7  outputs/nextbrain_baselines_harness_grid.json
+b67b476bcdef25cf37a37f8b2cf564d3570b4e08bf6d01dd3ad3359eb104636c  outputs/nextbrain_baselines_harness_grid.md
+82bf551968f6455d7504d9c3e29c251c4a44cf23990fd9daebb46b83d9116d08  scripts/train_nextbrain.py
+d0d8ffa709112f71ccc67d8119db70578d091ee849ae71559801580150a8eef0  scripts/eval_nextbrain_test.py
+# Queue files (folds 1,2,4,5 H&E) hashed 2026-10-30T01:14:22Z UTC, before any of those runs: fold configs, fold-aware train/eval copies, multi-fold harness-grid baselines script and outputs, queue runner (run_queue.py was exercised only against fake scripts in a sandbox)
+2af5505450b61df9a21c6ff4e87cbb22f1c6bacb538c5719e19255edd40f7bff  configs/nextbrain_fold1_he.json
+b26990ba33e1a9e2ae98dd0d5c1320cad405552748e37977519a0b1498e76ebe  configs/nextbrain_fold2_he.json
+704dd05f2f0ac1309d98ccc90ee3e70dfa50807c3278342a4e07a80906ff98e9  configs/nextbrain_fold4_he.json
+8a9ec7d71d0b624a75f782f54a998f84825df9e6bbca2a3e2c5ae2df749bd9bb  configs/nextbrain_fold5_he.json
+4912b97d21f18b9d36b89bbbc8bf347fe1e4916ceaa8b1fff7f8e9d21db7aa69  scripts/train_nextbrain_fold.py
+003211cb975d1917bfc7381e1cf47321dbb0bd06de49bce6068f8a03827e3e50  scripts/eval_nextbrain_test_fold.py
+eaccd29bfa1f8d52e5919628dd5eb771d32d04128a4105962daccdf5b14d9783  scripts/nextbrain_baselines_harness_grid_folds.py
+c4b106ec23173d373086c84f1a7c6afa25c242919fc42b8490168bad5fd29358  scripts/run_queue.py
+ec29dbedc336a92c7c30edd57d37e23226753411a0922f7c739f3191adecc0cc  outputs/nextbrain_baselines_harness_grid_fold1.json
+6ae1e25c06dac97e08574287cda74c1e40c2df0f6649ee5d5e8c943d94c3b675  outputs/nextbrain_baselines_harness_grid_fold2.json
+61b5b11d9812999ba9415f019274e7d879e433ca5eab972bd8229daffca1683e  outputs/nextbrain_baselines_harness_grid_fold4.json
+45aa27ffab367f7b20c636d878b8807111f2f68f66e319ed792d58016252694d  outputs/nextbrain_baselines_harness_grid_fold5.json
+e9d0edfea2947bca737f7b2bd9ba3072a4c38cdf13df871dc393fd557295127d  outputs/nextbrain_baselines_harness_grid_fold1.md
+3d2d23a2efa11334a13ce005b96b981aea2f96accf0563de9b02293b7ef91097  outputs/nextbrain_baselines_harness_grid_fold2.md
+c66b40dc26fa1f89c382a55098401044dffc9694801a7a8006991026c316f05e  outputs/nextbrain_baselines_harness_grid_fold4.md
+dbfef84b4936c1902ade51d383d5a101d15dd98cfeae263aadbfbd7d7e4818b9  outputs/nextbrain_baselines_harness_grid_fold5.md
+# NextBrain pre-registration addendum 2 and synthetic smoke files hashed 2026-10-30T03:15:43Z UTC, before the fold 3 test evaluation (Phase 1 accounting; .gitignore, README.md, ci.yml recorded in the addendum but not locked)
+c440cd905fe0cddcc34630b6938acdae0bcda5b2e5a964539f7938a3d6610aa7  outputs/nextbrain_prereg_addendum2.md
+5df1bd21de44998430716b46966f67692e1111843ccf791176403374ba722af0  mpbench/synthetic_smoke.py
+3ab71a39ed64889dfc874b659e61c09bf9dd6e3460cbd87c309d5850987b1d4f  tests/test_synthetic_smoke.py
+# NextBrain pre-registration addendum 3 hashed 2026-10-30T03:31:29Z UTC, before any test evaluation (protocol v1 confirmed; exploratory arms separated)
+8268a28b087715a66a1c11b6ab7de4e01b35eddf7d03adfe3240add2a11e3f65  outputs/nextbrain_prereg_addendum3.md
+# Fold 3 MRI-to-H&E training log, history and one-time test results hashed 2026-10-30T09:57:21Z UTC, AFTER the one-time test evaluation (recorded as produced; not a pre-registration)
+b3a85bc9065eda8c694d474e23522a2a221450b1c09cf72c8baf05088bb8628c  outputs/nextbrain_fold3_he/results.md
+4111073c09cb5ad7768da8c5b2cb7da93394711f86fa5d2c82c8432309fc3cb1  outputs/nextbrain_fold3_he/results.json
+a0f38f3751b4f937d46d71c9c07c775396b08e55a7830214f2dd9c130d90c993  outputs/nextbrain_fold3_he/history.csv
+fa9107b3e1fcb00866cb55232837f74006e49aff86eebf9262d89846aa3f49fa  outputs/nextbrain_fold3_he/ckpt_best.pt

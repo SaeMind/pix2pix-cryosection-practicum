@@ -1,0 +1,52 @@
+{
+ "device": "mps",
+ "torch": "2.4.0",
+ "n_train": 3588,
+ "n_val": 367,
+ "excluded_blocks": [
+  "EX9-19/48",
+  "P85-18/28"
+ ],
+ "iters": 200,
+ "warmup_s": 1.6999471187591553,
+ "sec_per_iter": 0.04832655630613628,
+ "sec_per_iter_sd": 0.0006853563228786479,
+ "peak_mem_bytes_sampled": 421363712,
+ "mem_stat": "MPS driver_allocated_memory, sampled after each iteration (no peak API)",
+ "process_peak_rss_bytes": 1038123008,
+ "data_load_s_per_record": 0.003771644830703735,
+ "val_load_s_per_record": 0.003409852773681973,
+ "val_pass_s": 37.107853174209595,
+ "val_masked_L1_after_200_iters": 0.19249694656367522,
+ "val_masked_L1_sd": 0.06627318765517815,
+ "last_lossG": 10.795343399047852,
+ "last_lossD": 0.3517388105392456,
+ "estimates": {
+  "1_epoch_s": 210.50353720062657,
+  "50_epochs_s": 10525.176860031328,
+  "100_epochs_s": 21050.353720062656
+ },
+ "fold_counts_train_val_after_exclusion": {
+  "1": [
+   3578,
+   404
+  ],
+  "2": [
+   3626,
+   436
+  ],
+  "3": [
+   3588,
+   367
+  ],
+  "4": [
+   3603,
+   441
+  ],
+  "5": [
+   3573,
+   384
+  ]
+ },
+ "total_5folds_2stains_100ep_s": 214757.95178804954
+}
